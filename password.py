@@ -1,1 +1,1 @@
-password='Admin2see'
+password='password'

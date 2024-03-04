@@ -81,4 +81,27 @@ def deleteStudent(student_id):
         print("Failed to connect to the database.")
 
 if __name__ == "__main__":
+    # Display all students before adding a new one
+    print("Current students:")
     getAllStudents()
+
+    # Add a new student
+    addStudent('Alice', 'Liddell', 'alice.liddell@example.com', '2023-10-01')
+    print("Added Alice Liddell.")
+
+    # Display all students after adding a new one
+    print("Updated list of students:")
+    getAllStudents()
+
+    # Update a student's email
+    updateStudentEmail(1, 'new.john.doe@example.com')
+    print("Updated John Doe's email.")
+
+    # Delete a student
+    deleteStudent(2)
+    print("Deleted student with ID 2.")
+
+    # Display all students after deletion
+    print("Final list of students:")
+    getAllStudents()
+

@@ -1,4 +1,4 @@
--- Create the students table
+-- create the students table
 CREATE TABLE students (
     student_id SERIAL PRIMARY KEY,
     first_name TEXT NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE students (
     enrollment_date DATE
 );
 
--- Insert initial data into the students table
+-- insert initial data into the students table
 INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
 ('John', 'Doe', 'john.doe@example.com', '2023-09-01'),
 ('Jane', 'Smith', 'jane.smith@example.com', '2023-09-01'),

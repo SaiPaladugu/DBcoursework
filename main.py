@@ -94,7 +94,7 @@ if __name__ == "__main__":
     getAllStudents()
 
     # Update a student's email
-    updateStudentEmail(1, 'new.john.doe@example.com')
+    updateStudentEmail(1, 'update.testing.john.doe@example.com')
     print("Updated John Doe's email.")
 
     # Delete a student

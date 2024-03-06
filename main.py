@@ -2,6 +2,9 @@ import psycopg2
 from psycopg2 import sql
 from password import password
 
+# Sai Paladugu
+# 101224375
+
 # Database connection parameters
 db_config = {
     "dbname": "a3q1",
@@ -85,23 +88,26 @@ if __name__ == "__main__":
     print("Current students:")
     getAllStudents()
 
-    # Add a new student
-    addStudent('Alice', 'Liddell', 'alice.liddell@example.com', '2023-10-01')
-    print("Added Alice Liddell.")
+    # # Add a new student
+    # addStudent('Alice', 'Liddell', 'alice.liddell@example.com', '2023-10-01')
+    # print("Added Alice Liddell.")
 
-    # Display all students after adding a new one
-    print("Updated list of students:")
-    getAllStudents()
+    # # Display all students after adding a new one
+    # print("Updated list of students:")
+    # getAllStudents()
 
-    # Update a student's email
-    updateStudentEmail(1, 'update.testing.john.doe@example.com')
-    print("Updated John Doe's email.")
+    # # Update a student's email
+    # updateStudentEmail(1, 'update.testing.john.doe@example.com')
+    # print("Updated John Doe's email.")
+    
+    # print("Current students:")
+    # getAllStudents()
 
-    # Delete a student
-    deleteStudent(2)
-    print("Deleted student with ID 2.")
+    # # Delete a student
+    # deleteStudent(2)
+    # print("Deleted student with ID 2.")
 
-    # Display all students after deletion
-    print("Final list of students:")
-    getAllStudents()
+    # # Display all students after deletion
+    # print("Final list of students:")
+    # getAllStudents()
 
